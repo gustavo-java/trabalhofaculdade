@@ -1,112 +1,476 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Petshop - Serviços</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-
+<a href="#conteudoPrincipal" class="pular-conteudo">
+    Pular para o conteúdo principal
+</a>
+    <!-- Cabeçalho e menu de navegação -->
     <header>
-        <h1>Petshop</h1>
-        <p>Serviços especializados para seu melhor amigo!</p>
 
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Petshop
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu de navegação">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="servicos.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre nós</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="agendamento.html">Agendamento</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
+
+
     </header>
 
-    <main>
-        <h2>Nossos serviços</h2>
 
-        <p>
-            Conheça os serviços disponíveis no PetVida para garantir o conforto e o bem-estar do seu animal.
+    <main id="conteudoPrincipal" class="container my-5">
+
+        <h2 class="text-center mb-3">Nossos serviços</h2>
+
+        <p class="text-center mb-5">
+            Conheça os serviços disponíveis no Petshop para garantir
+            o conforto e o bem-estar do seu animal.
         </p>
 
-        <section>
-            <article>
-                <h3>Banho</h3>
-                <img
-                src="https://itpetblog.com.br/wp-content/uploads/2023/06/banho_no_inverno.jpg"
-                width="250"
-                >
-                <p>
-                    Higienização completa do animal, utilizando produtos adequados para cada tipo de pelo.
-                </p>
 
-                <p>Valor: R$ 67,00</p>
-                <p>Tele-busca: Disponível.</p>
+        <!-- Serviço de banho -->
+        <section class="mb-5">
+
+            <article class="servico">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="https://itpetblog.com.br/wp-content/uploads/2023/06/banho_no_inverno.jpg"
+                            class="img-fluid imagem-servico"
+                            alt="Cachorro recebendo banho durante o atendimento">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <h3>Banho</h3>
+
+                        <p>
+                            Higienização completa do animal, utilizando
+                            produtos adequados para cada tipo de pelo.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                        <p>Tele-busca: Disponível.</p>
+
+                        <a href="agendamento.html" class="btn btn-success">
+                            Agendar banho
+                        </a>
+
+                    </div>
+
+                </div>
+
             </article>
 
-            <hr>
+        </section>
 
-            <article>
-                <h3>Tosa</h3>
-                <img
-                src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia27005/tosa-caes-cursos-cpt.jpg"
-                width="250">
 
-                <p>
-                    Serviço de corte e cuidados com os pelos, proporcionando conforto e higiene ao animal.
-                </p>
+        <hr>
 
-                <p>Valor: R$ 67,00</p>
-                <p>Tele-busca: Disponível.</p>
+
+        <!-- Serviço de tosa -->
+        <section class="my-5">
+
+            <article class="servico">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia27005/tosa-caes-cursos-cpt.jpg"
+                            class="img-fluid imagem-servico"
+                            alt="Profissional realizando a tosa de um cachorro">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <h3>Tosa</h3>
+
+                        <p>
+                            Serviço de corte e cuidados com os pelos,
+                            proporcionando conforto e higiene ao animal.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                        <p>Tele-busca: Disponível.</p>
+
+                        <a href="agendamento.html" class="btn btn-success">
+                            Agendar tosa
+                        </a>
+
+                    </div>
+
+                </div>
+
             </article>
 
-            <hr>
+        </section>
 
-            <article>
-                <h3>Consulta Veterinária</h3>
-                <img
-                src="https://estaticos.animaeducacao.com.br/medias/20250514153609/o-que-precisa-estudar-para-ser-veterinaria-_-_Imagem_-_Entenda_o__EDNIStr.webp"
-                width="250">
-                <p>
-                    Atendimento profissional para avaliação da saúde e orientação sobre os cuidados com o pet.
-                </p>
 
-                <p>Valor: R$ 120,00</p>
-                <p>Tele-busca: Não disponível.</p>
+        <hr>
+
+
+        <!-- Consulta veterinária -->
+        <section class="my-5">
+
+            <article class="servico">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="https://estaticos.animaeducacao.com.br/medias/20250514153609/o-que-precisa-estudar-para-ser-veterinaria-_-_Imagem_-_Entenda_o__EDNIStr.webp"
+                            class="img-fluid imagem-servico"
+                            alt="Profissional veterinária realizando atendimento">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <h3>Consulta Veterinária</h3>
+
+                        <p>
+                            Atendimento profissional para avaliação da
+                            saúde e orientação sobre os cuidados com o pet.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 120,00</p>
+                            
+                        <p>Tele-busca: Não disponível.</p>
+                        <a href="agendamento.html" class="btn btn-success mt-3"> Agendar serviço</a>
+                    </div>
+
+                </div>
+
             </article>
 
-            <hr>
+        </section>
 
-            <article>
-                <h3>Hospedagem</h3>
-                <img 
-                src="https://storage.googleapis.com/cmsapi.sistema.cim.br/C-307MMTG2XWCYRO/2021-05/e4L1Vc3Sh9dJ06g1kWiGKjdW/html_content.jpeg?v=20220627161028"
-                width="250">
-                <p>
-                    Acomodação temporária para animais,
-                    com acompanhamento e cuidados durante a estadia.
-                </p>
 
-                <p>Valor: R$ 67,00 por diária.</p>
-                <p>Tele-busca: Disponível.</p>
+        <hr>
+
+
+        <!-- Hospedagem -->
+        <section class="my-5">
+
+            <article class="servico">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="https://storage.googleapis.com/cmsapi.sistema.cim.br/C-307MMTG2XWCYRO/2021-05/e4L1Vc3Sh9dJ06g1kWiGKjdW/html_content.jpeg?v=20220627161028"
+                            class="img-fluid imagem-servico"
+                            alt="Ambiente preparado para hospedagem de animais">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <h3>Hospedagem</h3>
+
+                        <p>
+                            Acomodação temporária para animais, com
+                            acompanhamento e cuidados durante a estadia.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00 por diária.</p>
+
+                        <p>Tele-busca: Disponível.</p>
+                        <a href="agendamento.html" class="btn btn-success mt-3"> Agendar serviço</a>
+                    </div>
+
+                </div>
+
             </article>
+
+        </section>
+
+
+        <!-- Chamada para agendamento -->
+        <section class="text-center my-5">
+
+            <h2>Cuide do seu melhor amigo!</h2>
+
+            <p>
+                Escolha entre banho e tosa e agende um horário
+                para seu pet.
+            </p>
+
+            <a href="agendamento.html" class="btn btn-success">
+                Fazer agendamento
+            </a>
+
         </section>
 
     </main>
 
-    <footer>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+
         <hr>
 
         <p>Petshop - Cuidando de quem faz parte da família.</p>
         <p>Contato: contato@petshop.com.br</p>
         <p>Telefone: (51) 99999-9999</p>
 
-        <nav>
+        <nav aria-label="Navegação do rodapé">
+
             <a href="index.html">Início</a> |
             <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> 
+            <a href="servicos.html">Serviços</a> |
+            <a href="sobre.html">Sobre nós</a> |
+            <a href="agendamento.html">Agendamento</a>
+
         </nav>
 
         <p>&copy; 2026 Petshop. Todos os direitos reservados.</p>
         <p>Desenvolvido por: Gustavo Rangel Javarini</p>
+
     </footer>
+
+<!-- WIDGET DE ACESSIBILIDADE -->
+
+<div class="acessibilidade-widget">
+
+    <!-- Botão que abre o menu -->
+    <button
+        type="button"
+        id="botaoAcessibilidade"
+        class="botao-acessibilidade"
+        aria-label="Abrir opções de acessibilidade"
+        aria-expanded="false"
+        aria-controls="painelAcessibilidade"
+    >
+        <span aria-hidden="true">♿</span>
+        Acessibilidade
+    </button>
+
+
+    <!-- Menu de acessibilidade -->
+    <section
+        id="painelAcessibilidade"
+        class="painel-acessibilidade"
+        aria-label="Opções de acessibilidade"
+        hidden
+    >
+
+        <div class="cabecalho-acessibilidade">
+
+            <div>
+                <h2>Acessibilidade</h2>
+                <p>Personalize sua experiência</p>
+            </div>
+
+            <button
+                type="button"
+                id="fecharAcessibilidade"
+                class="fechar-acessibilidade"
+                aria-label="Fechar menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- LEITURA -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Leitura da página</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="ler">
+                    🔊 Ler página
+                </button>
+
+                <button type="button" data-acao="parar-leitura">
+                    ⏹ Parar leitura
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TAMANHO DO TEXTO -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Tamanho do texto</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="diminuir-texto">
+                    A− Diminuir
+                </button>
+
+                <button type="button" data-acao="aumentar-texto">
+                    A+ Aumentar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTRASTE -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Contraste</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="contraste-claro" aria-pressed="false">
+                    ☀ Contraste claro
+                </button>
+
+                <button type="button" data-acao="contraste-escuro" aria-pressed="false">
+                    ◐ Contraste escuro
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LEITURA E VISUALIZAÇÃO -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Leitura e visualização</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="espacamento" aria-pressed="false">
+                    ↔ Espaçar texto
+                </button>
+
+                <button type="button" data-acao="fonte-dislexia" aria-pressed="false">
+                    Aa Fonte simples
+                </button>
+
+                <button type="button" data-acao="destacar-links" aria-pressed="false">
+                    🔗 Destacar links
+                </button>
+
+                <button type="button" data-acao="esconder-imagens" aria-pressed="false">
+                    ▧ Esconder imagens
+                </button>
+
+                <button type="button" data-acao="guia-leitura" aria-pressed="false">
+                    ━ Guia de leitura
+                </button>
+
+                <button type="button" data-acao="pausar-animacoes" aria-pressed="false">
+                    ⏸ Pausar animações
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURAR -->
+        <button
+            type="button"
+            class="botao-restaurar"
+            data-acao="restaurar"
+        >
+            Restaurar configurações
+        </button>
+
+        <p
+            id="mensagemAcessibilidade"
+            class="mensagem-acessibilidade"
+            aria-live="polite"
+        ></p>
+
+    </section>
+
+</div>
+
+
+<!-- GUIA DE LEITURA -->
+<div
+    id="guiaLeitura"
+    class="guia-leitura"
+    hidden
+    aria-hidden="true"
+></div>
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript próprio -->
+    <script src="js/script.js"></script>
+<script src="js/acessibilidade.js"></script>
 
 </body>
 </html>

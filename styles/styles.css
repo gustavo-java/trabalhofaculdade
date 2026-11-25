@@ -1,0 +1,659 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+body {
+    background-color: #EEDFC7;
+    color: #533416;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =================================
+   CABEÇALHO
+================================= */
+
+header {
+    background-color: #EEDFC7;
+}
+
+header h1 {
+    color: #607938;
+    font-weight: bold;
+}
+
+header p {
+    color: #533416;
+}
+
+
+/* =================================
+   MENU DE NAVEGAÇÃO
+================================= */
+
+.navbar {
+    background-color: #533416 !important;
+}
+
+.navbar-brand {
+    color: #EEDFC7 !important;
+    font-size: 24px;
+}
+
+.navbar-brand:hover {
+    color:#CE7F20 !important
+}
+
+.nav-link {
+    color: #EEDFC7 !important;
+}
+
+.nav-link:hover {
+    color: #CE7F20 !important;
+}
+
+
+/* =================================
+   TÍTULOS
+================================= */
+
+h2 {
+    color: #607938;
+    margin-bottom: 15px;
+}
+
+h3,
+h4 {
+    color: #607938;
+}
+
+
+/* =================================
+   CARROSSEL DA PÁGINA INICIAL
+================================= */
+
+.carousel {
+    max-width: 900px;
+    margin: auto;
+}
+
+.carousel img {
+    height: 420px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* =================================
+   BOTÕES
+================================= */
+
+.btn-success {
+    background-color: #607938;
+    border-color: #607938;
+    color: #FFFFFF;
+}
+
+.btn-success:hover {
+    background-color: #533416;
+    border-color: #533416;
+    color: #FFFFFF;
+}
+
+
+/* =================================
+   PRODUTOS
+================================= */
+
+.produto {
+    background-color: #FFFFFF;
+    padding: 20px;
+    height: 100%;
+    border: 1px solid #CE7F20;
+    border-radius: 5px;
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.preco-produto {
+    color: #CE7F20;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* =================================
+   SERVIÇOS
+================================= */
+
+.servico {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #CE7F20;
+    border-radius: 5px;
+}
+
+.imagem-servico {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* =================================
+   FORMULÁRIO DE AGENDAMENTO
+================================= */
+
+.formulario-secao {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border: 1px solid #CE7F20;
+    border-radius: 5px;
+}
+
+.formulario-secao h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #533416;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #607938;
+    box-shadow: 0 0 0 0.2rem rgba(96, 121, 56, 0.2);
+}
+
+.form-check-input:checked {
+    background-color: #607938;
+    border-color: #607938;
+}
+
+
+/* =================================
+   PÁGINA SOBRE NÓS
+================================= */
+
+.sobre-secao {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border: 1px solid #CE7F20;
+    border-radius: 5px;
+}
+
+.imagem-sobre {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* =================================
+   RODAPÉ
+================================= */
+
+footer {
+    background-color: #EEDFC7;
+    color: #533416;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #607938;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+footer a:hover {
+    color: #CE7F20;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   AJUSTES PARA TELAS MENORES
+================================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .carousel img {
+        height: 250px;
+    }
+
+    main section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imagem-produto {
+        height: 200px;
+    }
+
+    .imagem-servico {
+        height: 220px;
+    }
+
+    .formulario-secao {
+        padding: 18px;
+    }
+
+    .imagem-sobre {
+        height: 250px;
+    }
+
+    footer nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+}
+/* BOLINHAS DO FORMULÁRIO */
+.form-check-input {
+    width: 19px;
+    height: 19px;
+    border: 2px solid #533416;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #CE7F20;
+    border-color: #533416;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(206, 127, 32, 0.35);
+}
+
+/* =================================
+   ACESSIBILIDADE
+================================= */
+
+/* Melhora a leitura dos textos */
+body {
+    line-height: 1.6;
+}
+
+/* Destaque dos elementos selecionados pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #CE7F20;
+    outline-offset: 3px;
+}
+
+/* Links mais fáceis de identificar */
+main a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Melhora a leitura dos campos */
+input,
+select,
+textarea,
+button {
+    font-size: 16px;
+}
+
+/* Atalho para pular diretamente ao conteúdo */
+.pular-conteudo {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: #533416;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    z-index: 9999;
+    border-radius: 5px;
+}
+
+.pular-conteudo:focus {
+    top: 10px;
+    color: #FFFFFF;
+}
+
+/* Respeita usuários que preferem menos animações */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+/* =================================
+   WIDGET DE ACESSIBILIDADE
+================================= */
+
+.acessibilidade-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.botao-acessibilidade {
+    background-color: #533416;
+    color: #FFFFFF;
+    border: 2px solid #EEDFC7;
+    border-radius: 30px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.botao-acessibilidade:hover {
+    background-color: #607938;
+}
+
+.botao-acessibilidade span {
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+/* PAINEL */
+
+.painel-acessibilidade {
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    width: 360px;
+    max-width: calc(100vw - 30px);
+    max-height: 75vh;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    color: #533416;
+    border: 2px solid #607938;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.painel-acessibilidade[hidden] {
+    display: none;
+}
+
+/* CABEÇALHO DO PAINEL */
+
+.cabecalho-acessibilidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #EEDFC7;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.cabecalho-acessibilidade h2 {
+    color: #533416;
+    font-size: 21px;
+    margin: 0;
+}
+
+.cabecalho-acessibilidade p {
+    font-size: 13px;
+    margin: 4px 0 0;
+}
+
+.fechar-acessibilidade {
+    background: none;
+    border: none;
+    color: #533416;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* GRUPOS DE OPÇÕES */
+
+.grupo-acessibilidade {
+    margin-bottom: 18px;
+}
+
+.grupo-acessibilidade h3 {
+    font-size: 15px;
+    color: #607938;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+
+.grade-acessibilidade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.grade-acessibilidade button {
+    min-height: 48px;
+    padding: 9px;
+    background-color: #EEDFC7;
+    color: #533416;
+    border: 1px solid #607938;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.grade-acessibilidade button:hover {
+    background-color: #CE7F20;
+    color: #FFFFFF;
+}
+
+/* OPÇÕES ATIVADAS */
+
+.grade-acessibilidade button[aria-pressed="true"] {
+    background-color: #607938;
+    color: #FFFFFF;
+    border-color: #533416;
+}
+
+/* BOTÃO RESTAURAR */
+
+.botao-restaurar {
+    width: 100%;
+    background-color: #533416;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-restaurar:hover {
+    background-color: #607938;
+}
+
+.mensagem-acessibilidade {
+    font-size: 12px;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+/* =================================
+   RECURSOS DE ACESSIBILIDADE
+================================= */
+
+/* CONTRASTE ESCURO */
+
+body.contraste-escuro {
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+}
+
+body.contraste-escuro header,
+body.contraste-escuro footer,
+body.contraste-escuro main,
+body.contraste-escuro nav,
+body.contraste-escuro .produto,
+body.contraste-escuro .servico,
+body.contraste-escuro .sobre-secao,
+body.contraste-escuro .formulario-secao {
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+}
+
+body.contraste-escuro h1,
+body.contraste-escuro h2,
+body.contraste-escuro h3,
+body.contraste-escuro h4,
+body.contraste-escuro p,
+body.contraste-escuro label,
+body.contraste-escuro a {
+    color: #FFFFFF !important;
+}
+
+/* CONTRASTE CLARO */
+
+body.contraste-claro {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+body.contraste-claro header,
+body.contraste-claro footer,
+body.contraste-claro main,
+body.contraste-claro nav,
+body.contraste-claro .produto,
+body.contraste-claro .servico,
+body.contraste-claro .sobre-secao,
+body.contraste-claro .formulario-secao {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+body.contraste-claro h1,
+body.contraste-claro h2,
+body.contraste-claro h3,
+body.contraste-claro h4,
+body.contraste-claro p,
+body.contraste-claro label,
+body.contraste-claro a {
+    color: #000000 !important;
+}
+
+/* ESPAÇAMENTO DE TEXTO */
+
+body.texto-espacado main p,
+body.texto-espacado main label,
+body.texto-espacado main li,
+body.texto-espacado main a {
+    letter-spacing: 0.08em;
+    line-height: 2;
+}
+
+/* FONTE SIMPLES */
+
+body.fonte-simples main {
+    font-family: Verdana, Arial, sans-serif !important;
+}
+
+body.fonte-simples main * {
+    font-family: Verdana, Arial, sans-serif !important;
+}
+
+/* DESTAQUE DE LINKS */
+
+body.links-destacados main a,
+body.links-destacados main button {
+    background-color: #FFEB3B !important;
+    color: #000000 !important;
+    outline: 2px solid #000000;
+    text-decoration: underline !important;
+}
+
+/* ESCONDER IMAGENS */
+
+body.imagens-escondidas main img {
+    visibility: hidden !important;
+}
+
+/* PAUSAR ANIMAÇÕES */
+
+body.animacoes-pausadas *,
+body.animacoes-pausadas *::before,
+body.animacoes-pausadas *::after {
+    animation-play-state: paused !important;
+    transition: none !important;
+}
+
+/* GUIA DE LEITURA */
+
+.guia-leitura {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(206, 127, 32, 0.25);
+    border-top: 2px solid #CE7F20;
+    border-bottom: 2px solid #CE7F20;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+.guia-leitura[hidden] {
+    display: none;
+}
+
+/* FOCO DO WIDGET */
+
+.acessibilidade-widget button:focus-visible {
+    outline: 3px solid #CE7F20;
+    outline-offset: 3px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+
+    .acessibilidade-widget {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .painel-acessibilidade {
+        right: 0;
+        bottom: 62px;
+        width: calc(100vw - 24px);
+        max-height: 70vh;
+    }
+
+    .botao-acessibilidade {
+        padding: 11px 15px;
+    }
+
+}
+

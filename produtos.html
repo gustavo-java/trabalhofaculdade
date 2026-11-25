@@ -1,151 +1,463 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Petshop - Produtos</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-
+<a href="#conteudoPrincipal" class="pular-conteudo">
+    Pular para o conteúdo principal
+</a>
+    <!-- Cabeçalho e menu -->
     <header>
-        <h1>Petshop</h1>
-        <p>Conheça nossos produtos!</p>
 
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Petshop
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu de navegação">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="produtos.html">Produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre nós</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="agendamento.html">Agendamento</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
+
+ 
+
     </header>
 
-    <main>
-        <h2>Nosso catálogo de produtos</h2>
 
-        <section>
-            <h3>Alimentação</h3>
+        <main id="conteudoPrincipal" class="container my-5">
 
-            <article>
-                <h4>Ração Premium para Cães</h4>
+        <h2 class="text-center mb-4">Nosso catálogo de produtos</h2>
 
-                <img
-                    src="https://www.petlove.com.br/images/products/209500/product/7896015605193-NESTL%C3%89_PURINA_KANINA_Ra%C3%A7%C3%A3o_Seca_para_C%C3%A3es_Filhotes_15kg-1000.jpg?1770704415"
-                    width="250"
-                >
 
-                <p>
-                    Ração nutritiva para cães adultos, desenvolvida para oferecer uma alimentação equilibrada.
-                </p>
+        <!-- Categoria de alimentação -->
+        <section class="mb-5">
 
-                <p>Valor: R$ 67,00</p>
-            </article>
+            <h3 class="mb-4">Alimentação</h3>
 
-            <article>
-                <h4>Ração Premium para Gatos</h4>
+            <div class="row g-4">
 
-                <img
-                    src="https://cobasi.vtexassets.com/arquivos/ids/1106804/racao-golden-gatos-adultos-sabor-carne-1-1.webp?v=639159322108400000"
-                    width="250"
-                >
+                <article class="col-md-6">
 
-                <p>
-                    Alimento completo para gatos adultos, com nutrientes essenciais para sua saúde.
-                </p>
+                    <div class="produto">
 
-                <p>Valor: R$ 67,00</p>
-            </article>
+                        <img
+                            src="https://www.petlove.com.br/images/products/209500/product/7896015605193-NESTL%C3%89_PURINA_KANINA_Ra%C3%A7%C3%A3o_Seca_para_C%C3%A3es_Filhotes_15kg-1000.jpg?1770704415"
+                            class="img-fluid imagem-produto"
+                            alt="Embalagem de ração para cães filhotes">
+
+                        <h4>Ração Premium para Cães</h4>
+
+                        <p>
+                            Ração nutritiva para cães adultos, desenvolvida
+                            para oferecer uma alimentação equilibrada.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="col-md-6">
+
+                    <div class="produto">
+
+                        <img
+                            src="https://cobasi.vtexassets.com/arquivos/ids/1106804/racao-golden-gatos-adultos-sabor-carne-1-1.webp?v=639159322108400000"
+                            class="img-fluid imagem-produto"
+                            alt="Embalagem de ração Golden para gatos adultos">
+
+                        <h4>Ração Premium para Gatos</h4>
+
+                        <p>
+                            Alimento completo para gatos adultos, com
+                            nutrientes essenciais para sua saúde.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
+
 
         <hr>
 
-        <section>
-            <h3>Categoria 2 - Higiene</h3>
 
-            <article>
-                <h4>Shampoo e Condicionador Canino</h4>
+        <!-- Categoria de higiene -->
+        <section class="my-5">
 
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjgCr2pySu1nPJAyBZFbUnXNSy2BCCPThWW6AtsOcLA&s=10"
-                    width="250"
-                >
+            <h3 class="mb-4">Higiene</h3>
 
-                <p>
-                    Shampoo desenvolvido para a higiene e limpeza dos pelos dos animais.
-                </p>
+            <div class="row g-4">
 
-                <p>Valor: R$ 67,90</p>
-            </article>
+                <article class="col-md-6">
 
-            <article>
-                <h4>Tapete Higiênico Pet</h4>
+                    <div class="produto">
 
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMv5X62MJkrtNvAIsxeyCS3RoAJS1chOwj_Eu7RdtuHg&s=10"
-                    width="250"
-                >
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjgCr2pySu1nPJAyBZFbUnXNSy2BCCPThWW6AtsOcLA&s=10"
+                            class="img-fluid imagem-produto"
+                            alt="Produto de shampoo e condicionador para cães">
 
-                <p>
-                    Tapete absorvente para auxiliar na higiene diária do seu cachorro.
-                </p>
+                        <h4>Shampoo e Condicionador Canino</h4>
 
-                <p>Valor: R$ 67,00</p>
-            </article>
+                        <p>
+                            Shampoo desenvolvido para a higiene e limpeza
+                            dos pelos dos animais.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,90</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="col-md-6">
+
+                    <div class="produto">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMv5X62MJkrtNvAIsxeyCS3RoAJS1chOwj_Eu7RdtuHg&s=10"
+                            class="img-fluid imagem-produto"
+                            alt="Pacote de tapetes higiênicos para animais">
+
+                        <h4>Tapete Higiênico Pet</h4>
+
+                        <p>
+                            Tapete absorvente para auxiliar na higiene
+                            diária do seu cachorro.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
+
 
         <hr>
 
-        <section>
-            <h3>Brinquedos</h3>
 
-            <article>
-                <h4>Bola de Borracha</h4>
+        <!-- Categoria de brinquedos -->
+        <section class="my-5">
 
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeTi-IhUD-4qUuJSWrLuvT7pA-hrFHWaFKjrSXwg8HA&s=10"
-                    width="250"
-                >
+            <h3 class="mb-4">Brinquedos</h3>
 
-                <p>
-                    Brinquedo resistente para estimular a atividade física e diversão do seu pet.
-                </p>
+            <div class="row g-4">
 
-                <p>Valor: R$ 67,00</p>
-            </article>
+                <article class="col-md-6">
 
-            <article>
-                <h4>Ratinho de Pelúcia</h4>
+                    <div class="produto">
 
-                <img
-                    src="https://down-br.img.susercontent.com/file/sg-11134201-22110-b85o151b9zjv59"
-                    width="250"
-                >
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeTi-IhUD-4qUuJSWrLuvT7pA-hrFHWaFKjrSXwg8HA&s=10"
+                            class="img-fluid imagem-produto"
+                            alt="Bola de borracha utilizada como brinquedo para cães">
 
-                <p>
-                    Brinquedo de pelúcia para estimular os instintos naturais dos gatos.
-                </p>
+                        <h4>Bola de Borracha</h4>
 
-                <p>Valor: R$ 67,00</p>
-            </article>
+                        <p>
+                            Brinquedo resistente para estimular a atividade
+                            física e diversão do seu pet.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="col-md-6">
+
+                    <div class="produto">
+
+                        <img
+                            src="https://down-br.img.susercontent.com/file/sg-11134201-22110-b85o151b9zjv59"
+                            class="img-fluid imagem-produto"
+                            alt="Brinquedo de ratinho de pelúcia para gatos">
+
+                        <h4>Ratinho de Pelúcia</h4>
+
+                        <p>
+                            Brinquedo de pelúcia para estimular os instintos
+                            naturais dos gatos.
+                        </p>
+
+                        <p class="preco-produto">Valor: R$ 67,00</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+
         <hr>
 
         <p>Petshop - Cuidando de quem faz parte da família.</p>
         <p>Contato: contato@petshop.com.br</p>
         <p>Telefone: (51) 99999-9999</p>
 
-        <nav>
+        <nav aria-label="Navegação do rodapé">
+
             <a href="index.html">Início</a> |
             <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> 
+            <a href="servicos.html">Serviços</a> |
+            <a href="sobre.html">Sobre nós</a> |
+            <a href="agendamento.html">Agendamento</a>
+
         </nav>
 
         <p>&copy; 2026 Petshop. Todos os direitos reservados.</p>
         <p>Desenvolvido por: Gustavo Rangel Javarini</p>
+
     </footer>
+
+<!-- WIDGET DE ACESSIBILIDADE -->
+
+<div class="acessibilidade-widget">
+
+    <!-- Botão que abre o menu -->
+    <button
+        type="button"
+        id="botaoAcessibilidade"
+        class="botao-acessibilidade"
+        aria-label="Abrir opções de acessibilidade"
+        aria-expanded="false"
+        aria-controls="painelAcessibilidade"
+    >
+        <span aria-hidden="true">♿</span>
+        Acessibilidade
+    </button>
+
+
+    <!-- Menu de acessibilidade -->
+    <section
+        id="painelAcessibilidade"
+        class="painel-acessibilidade"
+        aria-label="Opções de acessibilidade"
+        hidden
+    >
+
+        <div class="cabecalho-acessibilidade">
+
+            <div>
+                <h2>Acessibilidade</h2>
+                <p>Personalize sua experiência</p>
+            </div>
+
+            <button
+                type="button"
+                id="fecharAcessibilidade"
+                class="fechar-acessibilidade"
+                aria-label="Fechar menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- LEITURA -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Leitura da página</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="ler">
+                    🔊 Ler página
+                </button>
+
+                <button type="button" data-acao="parar-leitura">
+                    ⏹ Parar leitura
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TAMANHO DO TEXTO -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Tamanho do texto</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="diminuir-texto">
+                    A− Diminuir
+                </button>
+
+                <button type="button" data-acao="aumentar-texto">
+                    A+ Aumentar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTRASTE -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Contraste</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="contraste-claro" aria-pressed="false">
+                    ☀ Contraste claro
+                </button>
+
+                <button type="button" data-acao="contraste-escuro" aria-pressed="false">
+                    ◐ Contraste escuro
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LEITURA E VISUALIZAÇÃO -->
+        <div class="grupo-acessibilidade">
+
+            <h3>Leitura e visualização</h3>
+
+            <div class="grade-acessibilidade">
+
+                <button type="button" data-acao="espacamento" aria-pressed="false">
+                    ↔ Espaçar texto
+                </button>
+
+                <button type="button" data-acao="fonte-dislexia" aria-pressed="false">
+                    Aa Fonte simples
+                </button>
+
+                <button type="button" data-acao="destacar-links" aria-pressed="false">
+                    🔗 Destacar links
+                </button>
+
+                <button type="button" data-acao="esconder-imagens" aria-pressed="false">
+                    ▧ Esconder imagens
+                </button>
+
+                <button type="button" data-acao="guia-leitura" aria-pressed="false">
+                    ━ Guia de leitura
+                </button>
+
+                <button type="button" data-acao="pausar-animacoes" aria-pressed="false">
+                    ⏸ Pausar animações
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESTAURAR -->
+        <button
+            type="button"
+            class="botao-restaurar"
+            data-acao="restaurar"
+        >
+            Restaurar configurações
+        </button>
+
+        <p
+            id="mensagemAcessibilidade"
+            class="mensagem-acessibilidade"
+            aria-live="polite"
+        ></p>
+
+    </section>
+
+</div>
+
+
+<!-- GUIA DE LEITURA -->
+<div
+    id="guiaLeitura"
+    class="guia-leitura"
+    hidden
+    aria-hidden="true"
+></div>
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript próprio -->
+   <script src="js/script.js"></script>
+<script src="js/acessibilidade.js"></script>
 
 </body>
 </html>
